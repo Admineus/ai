@@ -1342,7 +1342,7 @@ std::string KeyHunt::formatThousands(uint64_t x)
 {
 	char buf[32] = "";
 
-	sprintf(buf, "%llu", x);
+	sprintf(buf, "%lu", static_cast<unsigned long>(x));
 
 	std::string s(buf);
 
